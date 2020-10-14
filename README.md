@@ -1,21 +1,13 @@
 ## 已经掌握
 
-- [**Java**](./Java/README.md)
+- [**Java**](./Java/README.md) **尚未编写笔记**
 - [**GitHub**](./GitHub/README.md)
-
-
-
-## 尚不熟悉
-
-- [**Spring**](./SSM/Spring/README.md)
-- [**SpringMVC**](./SSM/SpringMVC/README.md)
-- [**MyBatis**](./SSM/MyBatis/README.md)
-
-
 
 ## 正在了解
 
-- [**Rust**](./Rust/README.md)
-- [**Golang**](./Golang/README.md)
-- [**Ruby**](./Ruby/README.md)
-
+- [**Rust**](./Rust/README.md) **尚未编写笔记**
+- [**Golang**](./Golang/README.md) **尚未编写笔记**
+- [**Ruby**](./Ruby/README.md) **尚未编写笔记**
+- [**Spring**](./SSM/Spring/README.md) **尚未编写笔记**
+- [**SpringMVC**](./SSM/SpringMVC/README.md) **尚未编写笔记**
+- [**MyBatis**](./SSM/MyBatis/README.md) **尚未编写笔记**
