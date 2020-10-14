@@ -14,6 +14,28 @@ Git是一个开源的分布式版本控制系统，同时也是一个内容管�
 
 当执行提交`commit`指令时，暂存区的所有添加都会提交到版本库中，版本库添加一次提交记录，并且master分支会同步更新到最新的修改。当执行`reset HEAD`指令重置所有暂缓时，会销毁当前暂存区并且被当前master替换，工作区不会发生修改。当执行`rm --cached filename`时会直接从暂缓区删除指定的文件，不影响工作区文件。当执行`checkout .`或`checkout -- filename`时会使用当前暂缓区文件替换工作区文件。当执行`checkout HEAD .`或`checkout HEAD filename`时会使用当前版本库目录替换掉当前暂缓区以及工作区的文件。
 
+## 分支管理
+
+版本控制工具对分支的支持意味着你可以多个版本并行开发
+
+- 创建分支：`git branch name`
+- 切换分支：`git checkout name`
+- 查看所有分支：`git branch`
+- 删除分支：`git branch -d name`
+- 合并分区：`git merge name`
+  - 会把输入的分区名合并到当前分区
+
+## 搭建Git服务器
+
+首先需要一台运行Linux的服务器并安装了Git，创建用户组：`groupadd git`，创建用户：`useradd git -g git`，将用户公钥放入`/home/git/.ssh/authorized_keys`文件中，以行分割。在合适位置创建一个空文件夹并执行`git init --bare name.git`，将仓库所属用户设置为Git`chown -R git:git name.git`。克隆仓库指令`git clone git@ip:directory`
+
+## Git标签
+
+给项目版本打上标记
+
+- 给最新提交：`git tag -a version`
+- 给某个版本：`gut tag -a version ****`
+
 ## 指令集合
 
 - 将指定文件添加到暂缓区：`git add filename1 filename2 ...`
@@ -46,13 +68,15 @@ Git是一个开源的分布式版本控制系统，同时也是一个内容管�
   - 查看历史记录中分支信息：`git log --graph`
   - 查看分支分叉、归并记录：`git log --reverse`
 - 查看指定文件修改记录：`git blame filename`
+- 生成SSH Key：`ssh-keygen -t rsa -C email`
 - 显示所有远程仓库：`git remote -v`
   - 显示远程仓库信息：`git remote show [url]`
   - 添加远程版本库：`git remote add remotename [url]`
   - 提交到远程仓库：`git remote -u remotename master`
   - 删除远程仓库：`git remote rm remotename`
   - 修改远程仓库名：`git remote rename old_name new_name`
-- 将远程分支合并到当前分支：`git pull remotename master`
+- 将远程分支合并到当前分支：`git pull`
+- 将当前分支合并到到远程分支：`git push`
 
 
 
