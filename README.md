@@ -1,6 +1,7 @@
 ## 已经掌握
 
 - [**Java**](./Java/README.md)
+- [**GitHub**](./GitHub/README.md)
 
 
 
@@ -9,7 +10,6 @@
 - [**Spring**](./SSM/Spring/README.md)
 - [**SpringMVC**](./SSM/SpringMVC/README.md)
 - [**MyBatis**](./SSM/MyBatis/README.md)
-- [**GitHub**](./GitHub/README.md)
 
 
 
