@@ -1,6 +1,6 @@
 ## 已经掌握
 
-- [**Java**](./Java/README.md) **尚未编写笔记**
+- [**Java**](./Java/README.md) **编写中**
 - [**GitHub**](./GitHub/README.md)
 
 ## 正在了解
