@@ -1,13 +1,17 @@
-## 已经掌握
+## 目录导航
 
-- [**Java**](./Java/README.md) **编写中**
-- [**GitHub**](./GitHub/README.md)
+- [Java](./Java/README.md)
 
-## 正在了解
+- [Rust](./Rust/README.md)
 
-- [**Rust**](./Rust/README.md) **尚未编写笔记**
-- [**Golang**](./Golang/README.md) **尚未编写笔记**
-- [**Ruby**](./Ruby/README.md) **尚未编写笔记**
-- [**Spring**](./SSM/Spring/README.md) **尚未编写笔记**
-- [**SpringMVC**](./SSM/SpringMVC/README.md) **尚未编写笔记**
-- [**MyBatis**](./SSM/MyBatis/README.md) **尚未编写笔记**
+- [Golang](./Golang/README.md)
+
+- [Lua](./Lua/README.md)
+
+- [GitHub](./GitHub/README.md)
+
+- [数据库](./数据库/README.md)
+
+  
+
+  
