@@ -1,14 +1,51 @@
 # Java中的数据
 
+
+
 ## 基本数据类型
 
-基本数据类型几乎在任何编程语言中都不会缺席
+### 类型推导
+
+Java是一种强类型语言，需要为每一个声明的变量制定其具体的类型。但是在Java10中带来了**局部变量类型推导**这意味着你可以使用下面的方式声明一个变量：
+
+```java
+// String
+var str = new String("Hellow");
+// HashSet
+var hashSet = new HashSet<String>();
+// int
+var number = 10;
+// double
+var doub = 2.333;
+```
+
+需要注意的是Java的类型推导只能在局部变量中使用，不能在参数列表、域对象中使用。
 
 ### 四类八种
 
+需要注意的是Java中没有无符号变量，所有可声明的值都是有符号的。
+
+![四类八种基本数据类型](./Images/基本数据类型.png)
+
 ### 数据类型转换
 
+#### 隐式类型转换规则
 
+- 如果两个操作数中有一个是double，那么另一个操作数也会被转换为double。
+- 否则两个操作数中有一个是float，那么另一个操作数也会被转换为float。
+- 否则两个操作数中有一个是long，那么另一个操作数也会被转换为long。
+- 否则两个操作数都将被转换为int。
+
+#### 强制类型转换
+
+在有必要时可能需要将double类型转换为int类型，所要付出的代价就是精度的丢失。例如double和float转换为int时会直接将小数点后的数值直接截取，或者long转换为int会出现数据溢出问题。
+
+```java
+double a = 23.3;
+int b = (int)a;
+
+// b = 23
+```
 
 
 
@@ -48,6 +85,8 @@ StringBuilder与StringBuffer都是不被final修饰的字符串类型，这意�
 - 追加字符串：`str.append(String other) return this`
 - 在指定索引后添加字符串：`str.insert(int index, String other) return this`
 - 删除指定索引位置的字符串：`str.delete(int startIndex, int endindex) return this`
+
+
 
 ## 泛型
 
@@ -95,6 +134,8 @@ class MyCLass<T extends Number & List> {
 
 ### 泛型的实现
 
+
+
 ## 集合框架
 
 所有编程语言都离不开对数据的存储，程序的运行离不开数据的存储与传递，每种语言都对不同的数据结构提供了支持。在Java中提供了不同的类来支持不同数据存储的实现。
@@ -105,7 +146,7 @@ Java中将集合类库的接口与实现分离，接口并没有说明这种数�
 
 ### Java集合框架类图
 
-![来自菜鸟](C:/Users/Lingt/Documents/Git/Notes/Java/Images/Java集合框架类图.png)
+![来自菜鸟](./Images/Java集合框架类图.png)
 
 ### Iterable
 
