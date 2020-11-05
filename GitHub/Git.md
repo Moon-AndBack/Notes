@@ -85,6 +85,7 @@ Git是一个开源的分布式版本控制系统，同时也是一个内容管�
   - 修改远程仓库名：`git remote rename old_name new_name`
 - 将远程分支合并到当前分支：`git pull`
 - 将当前分支合并到到远程分支：`git push`
+- 生成用户配置文件：`git config --global credential.helper store`
 
 
 
