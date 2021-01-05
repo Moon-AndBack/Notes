@@ -1,17 +1,6 @@
-## 目录导航
+# 这是我的学习笔记
 
-- [Java](./Java/README.md)
-
-- [Rust](./Rust/README.md)
-
-- [Golang](./Golang/README.md)
-
-- [Lua](./Lua/README.md)
-
-- [GitHub](./GitHub/README.md)
-
-- [数据库](./数据库/README.md)
-
-  
-
-  
+## 目前已经存在的分支
+- Rust
+- Java
+- Golang
